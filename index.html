@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTcommand:workbench.trust.manageF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Form de Busca -->
+      <form id="search">
+        <i class="fa-solid fa-location-dot"></i>
+        <input
+          type="search"
+          name="city_name"
+          id="city_name"
+          placeholder="Cidade"
+        />
+        <input
+          type="search"
+          name="state_name"
+          id="state_name"
+          placeholder="Estado"
+        />
+
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <!-- Display de Infos -->
+      <div id="weather">
+        <h1 id="title"></h1>
+        <div id="infos">
+          <div id="temp">
+            <img
+              id="temp_img"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt=""
+            />
+            <div>
+              <p id="temp_value"></p>
+              <p id="temp_description"></p>
+            </div>
+          </div>
+
+          <div id="other_infos">
+            <div class="info">
+              <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+              <div>
+                <h2>Temp. max</h2>
+                <p id="temp_max"></p>
+              </div>
+            </div>
+
+            <div class="info">
+              <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+              <div>
+                <h2>Temp. min</h2>
+                <p id="temp_min"></p>
+              </div>
+            </div>
+
+            <div class="info">
+              <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+              <div>
+                <h2>Umidade</h2>
+                <p id="humidity"></p>
+              </div>
+            </div>
+
+            <div class="info">
+              <i id="wind_icon" class="fa-solid fa-wind"></i>
+              <div>
+                <h2>Vento</h2>
+                <p id="wind"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="alert"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
