@@ -1,4 +1,4 @@
-Esse é um projeto que trás a previsão do tempo da localização que o usuário digitar. Construído utiizando HTML, CSS, JavaScript e APi
+Esse é um projeto que trás a previsão do tempo da localização que o usuário digitar. Construído utiizando HTML, CSS, JavaScript e API
 
 \ Utilização \
 
