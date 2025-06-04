@@ -14,7 +14,7 @@ document.querySelector("#search").addEventListener("submit", async (event) => {
     return showAlert("Você precisa digitar um estado ...");
   }
 
-  const apiKey = "d772fa1853cf293e8ae87434b45bd7e4";
+  const apiKey = "API_KEY";
   const apiGeo = `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURI(
     cityName
   )},${encodeURI(stateName)},BR&limit=1&appid=${apiKey}`;
